@@ -20,7 +20,11 @@ public class B extends A {
 
     public void public_f() {}
 
-    protected void protected_f() {}
+    public void protected_f() {}    // <- B makes protected_f() public
 
     void f() {}
+
+    public void g() {
+        System.out.println("B#g() was called.");
+    }
 }
